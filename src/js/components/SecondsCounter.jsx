@@ -24,15 +24,15 @@ const [stopCounter, setStopCounter] = useState(false)
             <div className="container">
                 <div className="row">
                     <div className="col-12">
-                        <div className="d-flex border border-dark bg-dark text-white">
-                            <h1 className="p-3 border border-white"><FontAwesomeIcon icon={faClock} /></h1>
+                        <div className="d-flex text-white">
+                            <h1 className="p-3 border border-white bg-dark"><FontAwesomeIcon icon={faClock} /></h1>
 
-                            <h1 className="p-3 border border-white">{Math.floor((counter /100000) % 10)}</h1>
-                            <h1 className="p-3 border border-white">{Math.floor((counter /10000) % 10)}</h1>
-                            <h1 className="p-3 border border-white">{Math.floor((counter /1000) % 10)}</h1>
-                            <h1 className="p-3 border border-white">{Math.floor((counter /100) % 10)}</h1>
-                            <h1 className="p-3 border border-white">{Math.floor((counter / 10) % 10)}</h1>
-                            <h1 className="p-3 border border-white">{((counter /1) % 10)}</h1>
+                            <h1 className="p-3 border border-white bg-dark">{Math.floor((counter /100000) % 10)}</h1>
+                            <h1 className="p-3 border border-white bg-dark">{Math.floor((counter /10000) % 10)}</h1>
+                            <h1 className="p-3 border border-white bg-dark">{Math.floor((counter /1000) % 10)}</h1>
+                            <h1 className="p-3 border border-white bg-dark">{Math.floor((counter /100) % 10)}</h1>
+                            <h1 className="p-3 border border-white bg-dark">{Math.floor((counter / 10) % 10)}</h1>
+                            <h1 className="p-3 border border-white bg-dark">{((counter /1) % 10)}</h1>
 
                         </div>
                         <button onClick={() => setStopCounter(!stopCounter)}>{!stopCounter ? "Stop" : "Start"}</button>
