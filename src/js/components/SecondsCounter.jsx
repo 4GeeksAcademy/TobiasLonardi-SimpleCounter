@@ -24,7 +24,7 @@ const [stopCounter, setStopCounter] = useState(false)
             <div className="container">
                 <div className="row">
                     <div className="col-12">
-                        <div className="d-flex text-white">
+                        <div className="d-flex text-white border bg-dark justify-content-center">
                             <h1 className="p-3 border border-white bg-dark"><FontAwesomeIcon icon={faClock} /></h1>
 
                             <h1 className="p-3 border border-white bg-dark">{Math.floor((counter /100000) % 10)}</h1>
